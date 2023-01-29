@@ -54,6 +54,19 @@ const Hr = styled.hr`
     #17181d
   );
 `;
+const Top_Hr = styled.hr`
+  display: block;
+  border: none;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 80px;
+  background: linear-gradient(
+    to right,
+    #17181d,
+    rgba(255, 255, 255, 0.2),
+    #17181d
+  );
+`;
 // data
 
 function PrivateSection() {
@@ -86,6 +99,7 @@ function PrivateSection() {
     <>
       <div className="PrivateCreditSection">
         <Container>
+          <Top_Hr></Top_Hr>
           <Grid
             container
             rowSpacing={1}

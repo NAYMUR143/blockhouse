@@ -5,6 +5,13 @@ import { Container } from "@mui/system";
 import { Box, Card } from "@mui/material";
 import borrow from "../images/borrow.png";
 import trade from "../images/trade.png";
+import blck1 from "../images/blck1.png";
+import blck2 from "../images/blck2.png";
+import blck3 from "../images/blck3.png";
+import blck4 from "../images/blck4.png";
+import blck5 from "../images/blck5.png";
+import blck6 from "../images/blck6.png";
+
 const BlckHs_h1 = styled.h1`
   font-size: 2.5em;
   padding-bottom: 30px;
@@ -57,41 +64,41 @@ function ProductSection() {
       name: "Atomic Settlement",
       description:
         "All assets purchased have T + 0 settlement, payment vs delivery system",
-      img: `${trade}`,
+      img: `${blck1}`,
     },
     {
       id: 2,
       name: "End to end Trading",
       description:
         "Automated issuance, securitization, and trading workflows through tech",
-      img: `${trade}`,
+      img: `${blck2}`,
     },
     {
       id: 3,
       name: "Flexible Deployment",
       description: "Can deploy infra on permissioned / permissionless pools",
-      img: `${trade}`,
+      img: `${blck3}`,
     },
     {
       id: 4,
       name: "Post trade reporting",
       description:
         "Automate post trade workflows, TRACE reporting, reconciliation",
-      img: `${trade}`,
+      img: `${blck4}`,
     },
     {
       id: 5,
       name: "Unique Products",
       description:
         "Create and redeem custom bundled exposures to various credit pools",
-      img: `${trade}`,
+      img: `${blck5}`,
     },
     {
       id: 6,
       name: "Real-time asset data",
       description:
         "Providing standard trading data as well as real time alternative data for pricing",
-      img: `${trade}`,
+      img: `${blck6}`,
     },
   ];
   const [dataList, setDataList] = useState(data);

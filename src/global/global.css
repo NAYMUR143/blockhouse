@@ -34,7 +34,7 @@ body h1 span {
   height: 100%;
   position: relative;
   overflow: hidden;
-  padding: 40px 0px 0px;
+  padding: 0px 0px 0px;
 }
 .PrivateCreditSection::before {
   content: "";

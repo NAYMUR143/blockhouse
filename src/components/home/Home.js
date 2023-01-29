@@ -23,20 +23,27 @@ const Header = styled.header`
   ul {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     li {
       list-style: none;
       a {
         text-decoration: none;
         color: #fff;
         font-size: 1em;
+        border-bottom: 1px solid transparent;
+        transition: 0.3s;
+        &:hover {
+          border-bottom: 1px solid #fff;
+        }
       }
       svg {
         color: #fff;
+        font-size: 1.4em;
       }
       button {
         background: transparent;
         border: none;
+        cursor: pointer;
       }
     }
   }
@@ -68,6 +75,11 @@ const WrapTxt = styled.div`
     font-size: 1em;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background: rgba(101, 155, 235, 1);
+      color: #fff;
+    }
   }
 `;
 const Wrap_img = styled.div`
@@ -83,6 +95,21 @@ const Wrap_img = styled.div`
     width: 100%;
     object-fit: cover;
     margin-top: 50px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: 70%;
+    width: 40%;
+    transform: translate(-50%, -50%) rotate(18.36deg);
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.12)
+    );
+    filter: blur(156px);
   }
   // @media (max-width: 1100px) {
   //   width: 50%;
