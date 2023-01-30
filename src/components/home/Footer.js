@@ -27,6 +27,10 @@ const DealsBtn = styled.button`
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: all 0.3s;
+  &:hover {
+    background: #659beb;
+  }
 `;
 const InfoBtn = styled.button`
   font-size: 1.1em;
@@ -40,6 +44,11 @@ const InfoBtn = styled.button`
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: all 0.3s;
+  &:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+  }
 `;
 const H1 = styled.h1`
   font-size: 4.5em;
@@ -59,6 +68,17 @@ const BottomFooter = styled.footer`
       a {
         font-size: 1.5em;
         color: #fff;
+        transition: all 0.3s;
+      }
+      &:hover {
+        a {
+          color: #1da1f2;
+        }
+      }
+      &:first-child:hover {
+        a {
+          color: #0077b5;
+        }
       }
     }
   }
@@ -125,8 +145,8 @@ function Footer() {
             </li>
           </ul>
           <span>
-            made by{" "}
-            <a href="#" style={{ color: "#659beb", textDecoration: "none" }}>
+            made by
+            <a href="#" style={{ color: "#659beb" }}>
               roobinium.io
             </a>
           </span>

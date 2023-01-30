@@ -67,7 +67,6 @@ const Top_Hr = styled.hr`
     #17181d
   );
 `;
-// data
 
 function PrivateSection() {
   const data = [
